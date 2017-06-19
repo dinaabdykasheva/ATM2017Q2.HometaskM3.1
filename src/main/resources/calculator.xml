@@ -1,0 +1,77 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNg" verbose="1" parallel="false">
+    <test name="AdditionTest">
+        <classes>
+            <class name="testng.AdditionTest"></class>
+        </classes>
+    </test>
+    <test name="SubtractionTest">
+        <classes>
+            <class name="testng.SubtractionTest"></class>
+        </classes>
+    </test>
+    <test name="MultiplicationTest">
+        <classes>
+            <class name="testng.MultiplicationTest"></class>
+        </classes>
+    </test>
+    <test name="DivisionTest">
+        <classes>
+            <class name="testng.DivisionTest"></class>
+        </classes>
+    </test>
+    <test name="PowTest">
+        <classes>
+            <class name="testng.PowTest"></class>
+        </classes>
+    </test>
+    <test name="SqrtTest">
+        <classes>
+            <class name="testng.SqrtTest"></class>
+        </classes>
+    </test>
+    <test name="TgTest">
+        <groups>
+            <run>
+                <exclude name="tgTest"/>
+            </run>
+        </groups>
+    </test>
+    <test name="CtgTest">
+        <groups>
+            <run>
+                <exclude name="ctgTest"/>
+            </run>
+        </groups>
+    </test>
+    <test name="CosTest">
+        <groups>
+            <run>
+                <exclude name="cosTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testng.CosTest"></class>
+        </classes>
+    </test>
+    <test name="SinTest">
+        <groups>
+            <run>
+                <exclude name="sinTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testng.SinTest"></class>
+        </classes>
+    </test>
+    <test name="IsPositiveTest">
+        <classes>
+            <class name="testng.IsPositiveTest"></class>
+        </classes>
+    </test>
+    <test name="IsNegativeTest">
+        <classes>
+            <class name="testng.IsNegativeTest"></class>
+        </classes>
+    </test>
+</suite>
