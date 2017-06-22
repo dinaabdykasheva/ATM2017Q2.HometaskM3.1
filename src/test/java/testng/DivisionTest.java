@@ -11,10 +11,6 @@ import org.testng.annotations.Test;
  */
 public class DivisionTest extends AbstractCalculator{
 
-    public DivisionTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @Test(dataProvider = "divisionTestProviderDoubleNumber")
     @Parameters({"a", "b", "expected"})
     public void divisionTestDoubleNumber(double a, double b, double expected) {

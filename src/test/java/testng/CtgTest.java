@@ -11,10 +11,6 @@ import org.testng.annotations.Test;
  */
 public class CtgTest extends AbstractCalculator{
 
-    public CtgTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @Test(groups = "ctgTest", dataProvider = "ctgTestProvider")
     @Parameters({"a", "expected"})
     public void ctgTest(double a, double expected) {

@@ -2,6 +2,7 @@ package testng;
 
 
 import com.epam.tat.module4.Calculator;
+import org.testng.annotations.BeforeClass;
 
 /**
  * Created by Dina_Abdykasheva on 6/19/2017.
@@ -9,7 +10,8 @@ import com.epam.tat.module4.Calculator;
 public class AbstractCalculator {
     protected Calculator calculator;
 
-    public AbstractCalculator(Calculator calculator) {
-        this.calculator = calculator;
+    @BeforeClass
+    public void initCalc() {
+        this.calculator = new Calculator();
     }
 }

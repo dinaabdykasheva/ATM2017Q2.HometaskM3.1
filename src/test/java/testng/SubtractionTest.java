@@ -9,10 +9,6 @@ import org.testng.annotations.*;
  */
 public class SubtractionTest extends AbstractCalculator{
 
-    public SubtractionTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @BeforeClass
     public void printCurrentThreadIdBeforeClass() {
         long id = Thread.currentThread().getId();

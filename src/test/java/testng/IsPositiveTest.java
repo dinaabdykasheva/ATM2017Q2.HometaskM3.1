@@ -11,10 +11,6 @@ import org.testng.annotations.Test;
  */
 public class IsPositiveTest extends AbstractCalculator{
 
-    public IsPositiveTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @Test(dataProvider = "isPositiveTestProvider")
     @Parameters({"a", "expected"})
     public void isPositiveTest(long a, boolean expected) {

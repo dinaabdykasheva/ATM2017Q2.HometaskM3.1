@@ -11,10 +11,6 @@ import org.testng.annotations.Test;
  */
 public class SinTest extends AbstractCalculator{
 
-    public SinTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @Test(groups = "sinTest", dataProvider = "sinTestProvider")
     @Parameters({"a", "expected"})
     public void sinTest(double a, double expected) {

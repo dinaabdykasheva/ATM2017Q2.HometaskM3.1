@@ -11,10 +11,6 @@ import org.testng.annotations.Test;
  */
 public class TgTest extends AbstractCalculator{
 
-    public TgTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @Test(groups = "tgTest", dataProvider = "tgTestProvider")
     @Parameters({"a", "expected"})
     public void tgTest(double a, double expected) {

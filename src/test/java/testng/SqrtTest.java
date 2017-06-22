@@ -11,10 +11,6 @@ import org.testng.annotations.Test;
  */
 public class SqrtTest extends AbstractCalculator{
 
-    public SqrtTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @Test(dataProvider = "sqrtTestProvider")
     @Parameters({"a", "expected"})
     public void sqrtTest(double a, double expected) {

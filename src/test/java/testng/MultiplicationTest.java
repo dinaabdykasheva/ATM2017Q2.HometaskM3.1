@@ -13,10 +13,6 @@ import javax.xml.crypto.Data;
  */
 public class MultiplicationTest extends AbstractCalculator{
 
-    public MultiplicationTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @Test(dataProvider = "multiplicationTestProviderDoubleNumber")
     @Parameters({"a", "b", "expected"})
     public void multiplicationTestDoubleNumber(double a, double b, double expected) {

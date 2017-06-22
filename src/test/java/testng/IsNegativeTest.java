@@ -11,10 +11,6 @@ import org.testng.annotations.Test;
  */
 public class IsNegativeTest extends AbstractCalculator{
 
-    public IsNegativeTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @Test(dataProvider = "isNegativeTestProvider")
     @Parameters({"a", "expected"})
     public void isNegativeTest(long a, boolean expected) {

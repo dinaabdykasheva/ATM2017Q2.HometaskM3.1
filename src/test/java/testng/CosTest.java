@@ -11,10 +11,6 @@ import org.testng.annotations.Test;
  */
 public class CosTest extends AbstractCalculator{
 
-    public CosTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @Test(groups = "cosTest", dataProvider = "cosTestProvider")
     @Parameters({"a", "expected"})
     public void cosTest(double a, double expected) {

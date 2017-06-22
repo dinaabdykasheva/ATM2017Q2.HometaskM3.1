@@ -11,10 +11,6 @@ import org.testng.annotations.Test;
  */
 public class PowTest extends AbstractCalculator{
 
-    public PowTest(Calculator calculator) {
-        super(calculator);
-    }
-
     @Test(dataProvider = "powTestProvider")
     @Parameters({"a", "b", "expected"})
     public void powTest(double a, double b, double expected) {
